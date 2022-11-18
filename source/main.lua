@@ -2,10 +2,11 @@ import "CoreLibs/object"
 import "CoreLibs/graphics"
 import "CoreLibs/sprites"
 import "CoreLibs/timer"
+import "CoreLibs/keyboard"
 
-import "Schumaker"
+import "schumaker"
 
-local logo = Schumaker(1, -1)
+local logo = schumaker(1, -1)
 local gfx <const> = playdate.graphics
 local sfx <const> =	playdate.sound
 local font = gfx.font.new('font/Mini Sans 2X')
@@ -25,7 +26,7 @@ local function loadGame()
 	)
 	
 	sound:play(0)
-
+	playdate.keyboard.show()
 end
 
 local function updateGame()
@@ -42,5 +43,6 @@ loadGame()
 function playdate.update()
 	updateGame()
 	drawGame()
+	
 	playdate.drawFPS(0,0) -- FPS widget
 end

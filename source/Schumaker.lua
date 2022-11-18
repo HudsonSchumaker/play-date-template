@@ -3,9 +3,9 @@ import "CoreLibs/object"
 
 local gfx <const> = playdate.graphics
 
-class("Schumaker").extends()
+class("schumaker").extends()
 
-function Schumaker:init(xspeed, yspeed)
+function schumaker:init(xspeed, yspeed)
     self.label = {
 		x = 155,
 		y = 110,
@@ -13,11 +13,11 @@ function Schumaker:init(xspeed, yspeed)
 		yspeed = yspeed,
 		width = 180,
 		height = 20,
-		title = "SchuamkerTeam"
+		title = "SchumakerTeam"
 	}
 end
 
-function Schumaker:swapColors()
+function schumaker:swapColors()
 	if (gfx.getBackgroundColor() == gfx.kColorWhite) then
 		gfx.setBackgroundColor(gfx.kColorBlack)
 		gfx.setImageDrawMode("inverted")
@@ -27,7 +27,7 @@ function Schumaker:swapColors()
 	end
 end
 
-function Schumaker:update()
+function schumaker:update()
     local label = self.label;
     local swap = false
 	if (label.x + label.width >= 400 or label.x <= 0) then
@@ -48,7 +48,7 @@ function Schumaker:update()
 	label.y += label.yspeed
 end
 
-function Schumaker:draw()
+function schumaker:draw()
     local label = self.label;
     gfx.drawTextInRect(label.title, label.x, label.y, label.width, label.height)
 end
