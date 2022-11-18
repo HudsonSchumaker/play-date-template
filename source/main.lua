@@ -10,7 +10,7 @@ local logo = schumaker(1, -1)
 local gfx <const> = playdate.graphics
 local sfx <const> =	playdate.sound
 local font = gfx.font.new('font/Mini Sans 2X')
-local sound = sfx.sampleplayer.new('sfx/output.wav')
+local sound = sfx.sampleplayer.new('sfx/output.wav') --ffmpeg -i input.mp3 -acodec adpcm_ima_wav output.wav
 
 local function loadGame()
 	playdate.display.setRefreshRate(50) -- Sets framerate to 50 fps
