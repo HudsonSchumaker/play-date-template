@@ -1,6 +1,6 @@
 name=Template
 author=SchumakerTeam
 description=This is template project
-bundleID=br.com.schumakerteam
+bundleID=com.schumakerteam.template
 version=0.0.1
 buildNumber=1
