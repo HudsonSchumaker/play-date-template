@@ -2,7 +2,6 @@ import "CoreLibs/object"
 import "CoreLibs/graphics"
 import "CoreLibs/sprites"
 import "CoreLibs/timer"
-import "CoreLibs/keyboard"
 
 import "schumaker"
 
@@ -28,7 +27,6 @@ local function loadGame()
 	)
 	
 	song:play(0)
-	playdate.keyboard.show()
 end
 
 local function updateGame()
