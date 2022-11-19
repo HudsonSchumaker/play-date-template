@@ -8,7 +8,7 @@
 		"type": "shell",
 		"command": "&",
 		"args": [
-			"${workspaceFolder}\\Build and Run (Simulator).ps1",
+			"${workspaceFolder}\\build-run-sim.ps1",
 			"-build",
 			"'${workspaceFolder}\\builds'",
 			"-source",
@@ -27,7 +27,7 @@
 		"type": "shell",
 		"command": "&",
 		"args": [
-			"${workspaceFolder}\\Build and Run (Simulator).ps1",
+			"${workspaceFolder}\\build-run-sim.ps1",
 			"-build",
 			"'${workspaceFolder}\\builds'",
 			"-source",
