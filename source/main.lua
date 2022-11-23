@@ -13,6 +13,11 @@ local font = gfx.font.new('font/Mini Sans 2X')
 local song = sfx.fileplayer.new('sfx/output', 2) --ffmpeg -i input.mp3 -acodec adpcm_ima_wav output.wav
 print(song:getLength())
 
+local exit = playdate.timer.new(2222, function ()
+	logo:remove()
+end
+)
+
 local function loadGame()
 	playdate.display.setRefreshRate(50) -- Sets framerate to 50 fps
 	math.randomseed(playdate.getSecondsSinceEpoch()) -- seed for math.random
