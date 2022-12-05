@@ -1,3 +1,3 @@
 SchumakerTeam
 
-Template of a project for playdate
+Template of a project for playdate 
