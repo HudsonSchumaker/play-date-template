@@ -7,15 +7,15 @@ import "schumaker"
 
 local logo = schumaker(1, -1)
 local gfx <const> = playdate.graphics
-local sfx <const> =	playdate.sound
+local sfx <const> = playdate.sound
 
 local font = gfx.font.new('font/Mini Sans 2X')
 local song = sfx.fileplayer.new('sounds/output', 2) --ffmpeg -i input.mp3 -acodec adpcm_ima_wav output.wav
 print(song:getLength())
 
 local exit = playdate.timer.new(2222, function ()
-	logo:remove()
-end
+		logo:remove()
+	end
 )
 
 local function loadGame()
